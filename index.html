@@ -8,6 +8,9 @@
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
+<!-- ICONS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
 
@@ -15,23 +18,6 @@ body{
 color:#e0f7ff;
 background:linear-gradient(135deg,#001f3f,#003f5c,#0077b6);
 scroll-behavior:smooth;
-}
-
-/* STICKERS */
-.sticker{
-position:fixed;
-font-size:40px;
-opacity:0.7;
-animation:float 5s infinite ease-in-out;
-filter:drop-shadow(0 0 10px #00e5ff);
-}
-.sticker:nth-child(1){top:20%; left:5%;}
-.sticker:nth-child(2){top:60%; left:90%;}
-.sticker:nth-child(3){top:80%; left:10%;}
-
-@keyframes float{
-0%,100%{transform:translateY(0);}
-50%{transform:translateY(-20px);}
 }
 
 /* TOP BAR */
@@ -135,6 +121,30 @@ transition:0.3s;
 transform:translateY(-8px);
 }
 
+/* ICON STYLE */
+.card i{
+font-size:30px;
+margin-bottom:10px;
+color:#00e5ff;
+}
+
+/* ABOUT + WHY */
+.about, .why{
+text-align:left;
+max-width:900px;
+margin:auto;
+line-height:1.8;
+}
+
+.why ul{
+margin-top:15px;
+padding-left:20px;
+}
+
+.why li{
+margin-bottom:10px;
+}
+
 /* GALLERY */
 .gallery img{
 width:100%;
@@ -181,11 +191,6 @@ color:#90e0ef;
 
 <body>
 
-<!-- STICKERS -->
-<!-- <div class="sticker">🌊</div> -->
-<!-- <div class="sticker">💻</div> -->
-<!-- <div class="sticker">📄</div> -->
-
 <div class="topbar">📞 +91 90097 98600 | ✉️ oceanonline.in@gmail.com</div>
 
 <header>
@@ -211,19 +216,95 @@ color:#90e0ef;
 <button class="btn" onclick="go('contact')">Get Started</button>
 </section>
 
+<!-- ABOUT -->
+<section class="section">
+<h2>About Us</h2>
+
+<div class="about">
+<p><strong>Ocean Online & IT Services</strong> is your trusted digital service partner, dedicated to providing fast, reliable, and affordable online solutions.</p>
+
+<p>With years of experience in E-Mitra and IT services, we specialize in handling government documentation, online processes, and digital business solutions efficiently.</p>
+
+<p><strong>Our Skills:</strong></p>
+<ul>
+<li>✔ Government Documentation & E-Mitra Services</li>
+<li>✔ Website Development</li>
+<li>✔ Google My Business Optimization</li>
+<li>✔ Online Form Handling & Digital Support</li>
+</ul>
+</div>
+</section>
+
 <!-- SERVICES -->
 <section id="services" class="section">
 <h2>Services</h2>
 
 <div class="cards">
-<div class="card">Aadhar Services</div>
-<div class="card">PAN Card Services</div>
-<div class="card">Bill Payments</div>
-<div class="card">Online Forms</div>
-<div class="card">Banking Services</div>
-<div class="card">GMB Creation & Optimization</div>
-<div class="card">Website Creation</div>
-<div class="card">and Many More</div>
+
+<div class="card">
+<i class="fa-solid fa-id-card"></i>
+<h3>Aadhar Services</h3>
+<p>Quick updates & corrections without hassle.</p>
+</div>
+
+<div class="card">
+<i class="fa-solid fa-address-card"></i>
+<h3>PAN Card Services</h3>
+<p>Fast PAN application & updates.</p>
+</div>
+
+<div class="card">
+<i class="fa-solid fa-bolt"></i>
+<h3>Bill Payments</h3>
+<p>Pay all bills securely in one place.</p>
+</div>
+
+<div class="card">
+<i class="fa-solid fa-file-lines"></i>
+<h3>Online Forms</h3>
+<p>Error-free form filling for all services.</p>
+</div>
+
+<div class="card">
+<i class="fa-solid fa-building-columns"></i>
+<h3>Banking Services</h3>
+<p>Easy banking support at your convenience.</p>
+</div>
+
+<div class="card">
+<i class="fa-brands fa-google"></i>
+<h3>GMB Optimization</h3>
+<p>Grow your business visibility online.</p>
+</div>
+
+<div class="card">
+<i class="fa-solid fa-code"></i>
+<h3>Website Creation</h3>
+<p>Modern websites to grow your brand.</p>
+</div>
+
+<div class="card">
+<i class="fa-solid fa-layer-group"></i>
+<h3>And More</h3>
+<p>Multiple digital services under one roof.</p>
+</div>
+
+</div>
+</section>
+
+<!-- WHY CHOOSE US -->
+<section class="section">
+<h2>Why Choose Us</h2>
+
+<div class="why">
+<ul>
+<li>✔ Fast & Reliable Services</li>
+<li>✔ Experienced Professionals</li>
+<li>✔ Affordable Pricing</li>
+<li>✔ One-Stop Solution for Digital Needs</li>
+<li>✔ Customer Satisfaction is Our Priority</li>
+<li>✔ Trusted by Hundreds of Clients</li>
+</ul>
 </div>
 </section>
 
@@ -245,7 +326,6 @@ color:#90e0ef;
 <div class="gallery cards">
 <img src="store1.jpg">
 <img src="store2.jpg">
-<!-- <img src="store3.jpg"> -->
 </div>
 
 <br>
@@ -262,9 +342,7 @@ width="100%" height="300" style="border:0;border-radius:10px;">
 <h2>Customer Reviews</h2>
 
 <div class="reviews">
-<!-- <img src="review.jpg"> -->
-<img src="review.jpg">
-<!-- <img src="review3.jpg"> -->
+<img src="       review.jpg     ">
 </div>
 </section>
 
@@ -284,7 +362,6 @@ width="100%" height="300" style="border:0;border-radius:10px;">
 
 <!-- QUOTE -->
 <section class="section">
-<!-- <h2>🌊 Final Thought</h2> -->
 <p><em>" 🌊 Serving people with trust, just like the ocean serves every shore."</em></p>
 </section>
 
@@ -292,10 +369,9 @@ width="100%" height="300" style="border:0;border-radius:10px;">
 <p>© Ocean Online & IT Services</p>
 
 <div class="footer-contact">
-<p>📞 +91  9009 798600 </p>
-<p>✉️  oceanonline.in@gmail.com</p>
+<p>📞 +91 9009798600 </p>
+<p>✉️ oceanonline.in@gmail.com</p>
 </div>
-
 </footer>
 
 <script>
