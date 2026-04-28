@@ -100,7 +100,12 @@ margin:20px;
 border-radius:16px;
 }
 
-.section h2{color:#00e5ff;}
+/* UPDATED HEADING SIZE */
+.section h2{
+color:#00e5ff;
+font-size:2.5rem;
+margin-bottom:20px;
+}
 
 /* CARDS */
 .cards{
@@ -151,17 +156,20 @@ width:100%;
 border-radius:10px;
 }
 
-/* REVIEWS */
+/* REVIEWS - CENTERED */
 .reviews{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
+display:flex;
+justify-content:center;
+align-items:center;
 margin-top:30px;
 }
 
-.review img{
-width:100%;
+.reviews img{
+width:300px;
+max-width:90%;
 border-radius:10px;
+display:block;
+margin:auto;
 }
 
 /* FORM */
@@ -202,7 +210,6 @@ color:#90e0ef;
 <nav>
 <a href="#">Home</a>
 <a href="#services">Services</a>
-<a href="#portfolio">Portfolio</a>
 <a href="#store">Store</a>
 <a href="#contact">Contact</a>
 </nav>
@@ -292,7 +299,7 @@ color:#90e0ef;
 </div>
 </section>
 
-<!-- WHY CHOOSE US -->
+<!-- WHY -->
 <section class="section">
 <h2>Why Choose Us</h2>
 
@@ -307,15 +314,6 @@ color:#90e0ef;
 </ul>
 </div>
 </section>
-
-<!-- PORTFOLIO -->
-<!-- <section id="portfolio" class="section"> -->
-<!-- <h2>Our Portfolio</h2> -->
-
-<!-- <div style="margin-top:20px;"> -->
-<!-- <a href="portfolio.pdf" target="_blank" class="btn">📄 View Portfolio</a> -->
-<!-- </div> -->
-<!-- </section> -->
 
 <!-- STORE -->
 <section id="store" class="section">
@@ -342,7 +340,7 @@ width="100%" height="300" style="border:0;border-radius:10px;">
 <h2>Customer Reviews</h2>
 
 <div class="reviews">
-<img src="       review.jpg     ">
+<img src="review.jpg">
 </div>
 </section>
 
